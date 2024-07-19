@@ -1,0 +1,73 @@
+/* newStyle.css */
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 100;
+  padding: 50;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cceeff; /* light blue background color */
+}
+
+/* New Post Styles */
+
+.newpost {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newpost h1 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Styles */
+
+form {
+  padding: 20px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #210e0e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"], button[type="button"] {
+  display: block;
+  margin: 20px auto;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+button[type="button"] {
+  background-color: #337ab7;
+}
+
+button[type="button"]:hover {
+  background-color: #23527c;
+}

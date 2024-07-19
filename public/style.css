@@ -1,0 +1,102 @@
+/* style.css */
+
+/* Global Styles */
+
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: 5cap;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #8dcdcc;
+    
+  }
+  
+  /* Blog Page Styles */
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Post Styles */
+  
+  .post {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #200b0b;
+    border-style: solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post .user {
+    font-weight: bold;
+    color: #337ab7;
+  }
+  
+  .post .content {
+    margin-bottom: 20px;
+  }
+  
+  .post a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .post a:hover {
+    color: #23527c;
+  }
+  
+  .post form {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .post button[type="submit"] {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post button[type="submit"]:hover {
+    background-color: #c0392b;
+  }
+  
+  .post button[type="button"] {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post button[type="button"]:hover {
+    background-color: #c0392b;
+  }
+  
+  
+  /* Create New Post Link Styles */
+  
+  a[href$="/new"] {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #337ab7;
+  }
+  
+  a[href$="/new"]:hover {
+    color: #23527c;
+  }

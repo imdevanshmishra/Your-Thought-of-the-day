@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts </title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Your Thought of the Day</h1>
+    <% for(post of posts){ %>
+      <div class ="post"> 
+        <h3 class ="user">@<%= post.username %></h3>
+        <h4 class = "content"> <%= post.content %></h4>
+
+
+        <a href="http://localhost:8080/posts/<%= post.id %>">See in Details </a>    <br/> 
+      
+        <button type="button" onclick="location.href='http://localhost:8080/posts/<%= post.id %>/edit'">Edit Post</button>
+        <form action="http://localhost:8080/posts/<%= post.id %>?_method=DELETE" method="POST">
+          <button type="submit">Delete</button>
+      </div>
+      <form/>
+     
+  
+   <% } %>
+
+   <br/>
+   <br/>
+
+  <a href="http://localhost:8080/posts/new">Create new Post</a>
+  </body>
+</html>
+
